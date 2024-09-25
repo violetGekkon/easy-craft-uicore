@@ -1,0 +1,23 @@
+{
+  "name": "@easy-craft/ui-core",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "description": "Versatile component library",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "ui",
+    "angular",
+    "components",
+    "lib"
+  ],
+  "author": "sia",
+  "license": "MIT"
+}
