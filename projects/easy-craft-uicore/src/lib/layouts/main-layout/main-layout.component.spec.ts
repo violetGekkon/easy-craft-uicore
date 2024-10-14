@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EasyCraftUicoreComponent } from './easy-craft-uicore.component';
+import { MainLayoutComponent } from './main-layout.component';
 
-describe('EasyCraftUicoreComponent', () => {
-  let component: EasyCraftUicoreComponent;
-  let fixture: ComponentFixture<EasyCraftUicoreComponent>;
+describe('MainLayoutComponent', () => {
+  let component: MainLayoutComponent;
+  let fixture: ComponentFixture<MainLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EasyCraftUicoreComponent]
+      imports: [MainLayoutComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(EasyCraftUicoreComponent);
+    fixture = TestBed.createComponent(MainLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

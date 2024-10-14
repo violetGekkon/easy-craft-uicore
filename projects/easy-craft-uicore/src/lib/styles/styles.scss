@@ -1,0 +1,8 @@
+@import '@nebular/theme/styles/globals';
+// themes - our custom or/and out of the box themes
+@import 'themes';
+
+@include nb-install() {
+  @include nb-theme-global();
+}
+

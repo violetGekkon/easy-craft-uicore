@@ -1,0 +1,7 @@
+@import '@nebular/theme/styles/core/theming/_install.scss';
+@include nb-install-component() {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
