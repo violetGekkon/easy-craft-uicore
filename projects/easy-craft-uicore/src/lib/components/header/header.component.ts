@@ -3,7 +3,11 @@ import {
   NbActionsModule,
   NbButtonModule,
   NbIconModule,
-  NbSearchModule, NbSelectModule, NbSidebarService, NbThemeService,
+  NbMenuService,
+  NbSearchModule,
+  NbSelectModule,
+  NbSidebarService,
+  NbThemeService,
 } from '@nebular/theme';
 import {NbEvaIconsModule} from "@nebular/eva-icons";
 import {map, Subject, takeUntil} from "rxjs";
@@ -47,9 +51,10 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-  @Output() navigateHome = new EventEmitter();
+  @Output() onLogoutClick = new EventEmitter();
 
   constructor(private _themeService: NbThemeService,
+              private _menuService: NbMenuService,
               private _sidebarService: NbSidebarService) {
   }
 
@@ -66,6 +71,11 @@ export class HeaderComponent implements OnInit {
   ngOnDestroy() {
     this.destroy$.next();
     this.destroy$.complete();
+  }
+
+  navigateHome() {
+    this._menuService.navigateHome();
+    return false;
   }
 
   changeTheme(themeName: string) {

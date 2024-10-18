@@ -16,7 +16,7 @@ import {FooterComponent} from "../../components/footer/footer.component";
   template: `
     <nb-layout windowMode>
       <nb-layout-header fixed>
-        <ngx-header></ngx-header>
+        <ng-content select="ngx-header"></ng-content>
       </nb-layout-header>
 
       <nb-sidebar class="menu-sidebar" tag="menu-sidebar" responsive>
