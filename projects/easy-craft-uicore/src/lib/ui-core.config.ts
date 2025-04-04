@@ -14,7 +14,7 @@ export const THEME_DEFINITIONS = new InjectionToken<NbJSThemeOptions[]>('THEME_D
 export function provideUiCore(themes: NbJSThemeOptions[]): ApplicationConfig['providers'] {
   return [
     importProvidersFrom(
-      NbThemeModule.forRoot({ name: 'dark' }),
+      NbThemeModule.forRoot({ name: 'dark' }, themes),
       NbSidebarModule.forRoot(),
       NbMenuModule.forRoot(),
       NbDatepickerModule.forRoot(),

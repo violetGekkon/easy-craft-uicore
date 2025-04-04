@@ -5,9 +5,6 @@
     </a>
     <a class="logo" href="#" (click)="navigateHome()">ec-<span>admin</span></a>
   </div>
-  <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
-    <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
-  </nb-select>
 </div>
 
 <div class="header-container">
@@ -15,6 +12,7 @@
     <nb-action class="control-item">
       <nb-search type="rotate-layout"></nb-search>
     </nb-action>
+    <nb-action class="control-item" [icon]="currentTheme === 'default' ? 'sun-outline' : 'moon-outline'" (click)="changeTheme()"></nb-action>
     <nb-action class="control-item" icon="log-out-outline" (click)="onLogoutClick.emit()"></nb-action>
   </nb-actions>
 </div>

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnDestroy, OnInit, Output} from '@angular/core';
 import {
   NbActionsModule,
   NbButtonModule,
@@ -29,27 +29,9 @@ import {NgForOf} from "@angular/common";
   styleUrls: ['./header.component.scss'],
   templateUrl: './header.component.html',
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
   private destroy$: Subject<void> = new Subject<void>();
   currentTheme = 'default';
-  themes = [
-    {
-      value: 'default',
-      name: 'Light',
-    },
-    {
-      value: 'dark',
-      name: 'Dark',
-    },
-    {
-      value: 'cosmic',
-      name: 'Cosmic',
-    },
-    {
-      value: 'corporate',
-      name: 'Corporate',
-    },
-  ];
 
   @Output() onLogoutClick = new EventEmitter();
 
@@ -78,7 +60,8 @@ export class HeaderComponent implements OnInit {
     return false;
   }
 
-  changeTheme(themeName: string) {
+  changeTheme() {
+    const themeName = this.currentTheme === 'dark' ? 'default' : 'dark';
     this._themeService.changeTheme(themeName);
   }
 

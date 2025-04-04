@@ -3,6 +3,84 @@
 // @nebular out of the box themes
 @import '@nebular/theme/styles/themes';
 
+$nb-themes: nb-register-theme(
+    (
+
+      layout-padding-top: 2.25rem,
+
+      menu-item-icon-margin: 0 0.5rem 0 0,
+
+      card-height-tiny: 13.5rem,
+      card-height-small: 21.1875rem,
+      card-height-medium: 28.875rem,
+      card-height-large: 36.5625rem,
+      card-height-giant: 44.25rem,
+      card-margin-bottom: 1.875rem,
+      card-header-with-select-padding-top: 0.5rem,
+      card-header-with-select-padding-bottom: 0.5rem,
+
+      select-min-width: 6rem,
+
+      slide-out-background: #f7f9fc,
+      slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+      slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+
+      // Основные цвета
+      color-primary-100: #c5cbe5,
+      color-primary-200: #8b9dcf,
+      color-primary-300: #4f6ea7,
+      color-primary-400: #2f4c85,
+      color-primary-500: #213567,  // Основной насыщенный синий
+      color-primary-600: #19274f,
+      color-primary-700: #101a36,
+      color-primary-800: #0c1228,
+      color-primary-900: #070a1a,
+
+      color-basic-100: #f4f6fa,
+      color-basic-200: #d0d5e0,
+      color-basic-300: #8a92a6,
+      color-basic-400: #646b7d,
+      color-basic-500: #4b5160,
+      color-basic-600: #383c49,
+      color-basic-700: #272a34,
+      color-basic-800: #1c1f28,
+      color-basic-900: #13151d,
+      color-basic-1000: #0e1016,
+
+      // Фоны
+      background-basic-color-1: color-basic-800,  // Основной фон
+      background-basic-color-2: color-basic-900,  // Фон для панелей
+      background-basic-color-3: #10131b,          // Фон для карточек
+      background-basic-color-4: #070a0f,          // Фон для глубоких элементов
+
+      // Границы
+      border-basic-color-1: #2f3541,  // Средняя граница
+      border-basic-color-2: #212631,  // Темная граница
+      border-basic-color-3: #181c24,
+      border-basic-color-4: #10141b,  // Граница для глубоких блоков
+
+      // Тени
+      shadow: 0 2px 4px rgba(0, 0, 0, 0.5), // Для контрастности
+      shadow-card: 0 4px 8px rgba(0, 0, 0, 0.6), // Для карточек
+      shadow-button: 0 2px 4px rgba(0, 0, 0, 0.5), // Для кнопок
+
+      // Текст
+      text-basic-color: #e3e7f0,  // Светлый текст для контента
+      text-disabled-color: #6c7483, // Текст для неактивных элементов
+      text-hint-color: #8a92a6, // Подсказки
+      text-strong-color: #ffffff, // Для выделенного текста
+
+      // Активные элементы
+      active-bg: color-primary-700, // Фон активных элементов
+      active-text-color: color-basic-100, // Текст активных элементов
+
+      divider-color: #2f3541,
+      scrollbar-bg-color: #161920,
+      scrollbar-thumb-color: #2d3341,
+    ),
+    dark,
+    dark
+);
 
 $nb-themes: nb-register-theme((
 
