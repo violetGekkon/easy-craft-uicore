@@ -15,7 +15,7 @@ import {RouterOutlet} from "@angular/router";
   ],
   template: `
     <ngx-one-column-layout>
-      <ngx-header (onLogoutClick)="onLogoutClick.emit()"></ngx-header>
+      <ngx-header (onLogoutClick)="onLogoutClick.emit()" [title]="title"></ngx-header>
       <nb-menu [items]=menu></nb-menu>
       <router-outlet></router-outlet>
     </ngx-one-column-layout>`,
@@ -24,4 +24,5 @@ import {RouterOutlet} from "@angular/router";
 export class MainLayoutComponent {
   @Output() onLogoutClick = new EventEmitter();
   @Input() menu: NbMenuItem[] = [];
+  @Input() title: string = 'ec-admin';
 }

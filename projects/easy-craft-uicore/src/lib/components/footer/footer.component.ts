@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <span class="created-by">
-      Created with ♥ by <b>Easy-craft</b> 2024
+      Created with ♥ by <b>Easy-craft</b> {{date.getFullYear()}}
     </span>
   `,
 })
 export class FooterComponent {
+  protected readonly date = new Date();
 }

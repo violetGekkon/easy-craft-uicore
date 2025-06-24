@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnDestroy, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {
   NbActionsModule,
   NbButtonModule,
@@ -32,7 +32,7 @@ import {NgForOf} from "@angular/common";
 export class HeaderComponent implements OnInit, OnDestroy {
   private destroy$: Subject<void> = new Subject<void>();
   currentTheme = 'default';
-
+  @Input() title: string = 'ec-admin';
   @Output() onLogoutClick = new EventEmitter();
 
   constructor(private _themeService: NbThemeService,
