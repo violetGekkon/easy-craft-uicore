@@ -6,6 +6,8 @@
 $nb-themes: nb-register-theme(
     (
 
+      font-family-primary: 'Roboto, sans-serif',
+
       layout-padding-top: 2.25rem,
 
       menu-item-icon-margin: 0 0.5rem 0 0,
@@ -47,6 +49,26 @@ $nb-themes: nb-register-theme(
       color-basic-900: #13151d,
       color-basic-1000: #0e1016,
 
+      color-danger-100: #FCE9DD,
+      color-danger-200: #FACFBC,
+      color-danger-300: #F1AC98,
+      color-danger-400: #E3897A,
+      color-danger-500: #D25851,
+      color-danger-600: #B43B3E,
+      color-danger-700: #972835,
+      color-danger-800: #79192C,
+      color-danger-900: #640F27,
+
+      color-success-100: #E4F9D9,
+      color-success-200: #C4F4B5,
+      color-success-300: #96E089,
+      color-success-400: #6AC163,
+      color-success-500: #369938,
+      color-success-600: #278331,
+      color-success-700: #1B6E2B,
+      color-success-800: #115825,
+      color-success-900: #0A4921,
+
       // Фоны
       background-basic-color-1: color-basic-800,  // Основной фон
       background-basic-color-2: color-basic-900,  // Фон для панелей
@@ -84,6 +106,8 @@ $nb-themes: nb-register-theme(
 
 $nb-themes: nb-register-theme((
 
+  font-family-primary: 'Roboto, sans-serif',
+
   layout-padding-top: 2.25rem,
 
   menu-item-icon-margin: 0 0.5rem 0 0,
@@ -102,4 +126,54 @@ $nb-themes: nb-register-theme((
   slide-out-background: #f7f9fc,
   slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
   slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+
+  color-primary-100: #C8EEFA,
+  color-primary-200: #93D8F6,
+  color-primary-300: #5BB4E5,
+  color-primary-400: #338DCC,
+  color-primary-500: #005BAA,
+  color-primary-600: #004692,
+  color-primary-700: #00347A,
+  color-primary-800: #002562,
+  color-primary-900: #001A51,
+
+  color-success-100: #E4F9D9,
+  color-success-200: #C4F4B5,
+  color-success-300: #96E089,
+  color-success-400: #6AC163,
+  color-success-500: #369938,
+  color-success-600: #278331,
+  color-success-700: #1B6E2B,
+  color-success-800: #115825,
+  color-success-900: #0A4921,
+
+  color-info-100: #D4F1FB,
+  color-info-200: #AAE0F7,
+  color-info-300: #7CC2E9,
+  color-info-400: #58A0D4,
+  color-info-500: #2975B8,
+  color-info-600: #1D5B9E,
+  color-info-700: #144484,
+  color-info-800: #0D306A,
+  color-info-900: #072158,
+
+  color-warning-100: #FEF9DB,
+  color-warning-200: #FDF1B8,
+  color-warning-300: #FBE693,
+  color-warning-400: #F7DB78,
+  color-warning-500: #F2C94C,
+  color-warning-600: #D0A637,
+  color-warning-700: #AE8526,
+  color-warning-800: #8C6618,
+  color-warning-900: #74500E,
+
+  color-danger-100: #FCE9DD,
+  color-danger-200: #FACFBC,
+  color-danger-300: #F1AC98,
+  color-danger-400: #E3897A,
+  color-danger-500: #D25851,
+  color-danger-600: #B43B3E,
+  color-danger-700: #972835,
+  color-danger-800: #79192C,
+  color-danger-900: #640F27
 ), default, default);
